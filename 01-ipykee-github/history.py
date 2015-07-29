@@ -45,6 +45,15 @@
    "source": [
     "session.add(x, \"x\")"
    ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 5,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "session.commit(\"Plot sin x\")"
+   ]
   }
  ],
  "metadata": {},

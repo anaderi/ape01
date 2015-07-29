@@ -9,5 +9,7 @@
     
     RUN cp $TEMP/project/./01-ipykee-github/notebook.ipynb /notebooks/ipykee_howto/01-ipykee-github.ipynb
     
+    RUN cp $TEMP/project/./Dockerfile/notebook.ipynb /notebooks/ipykee_howto/Dockerfile.ipynb
+    
     RUN cd / && rm -rf $TEMP/workdir
     

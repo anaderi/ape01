@@ -30,3 +30,10 @@ session.add(x, "x")
 # <codecell>
 
 session.commit("Plot sin x")
+
+# <codecell>
+
+fig2 = plt.figure()
+ax2 = fig2.add_subplot(1, 1, 1)
+ax2.plot(x, np.cos(x))
+ax2.set_title('cosine')
