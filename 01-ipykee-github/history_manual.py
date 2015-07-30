@@ -3,8 +3,38 @@
 
 # <codecell>
 
-%%javascript
-IPython.load_extensions('ipykee');
+import ipykee
+ipykee.settings
+
+# <codecell>
+
+import ipykee
+print ipykee.settings
+
+# <codecell>
+
+import ipykee
+print ipykee.settings.Settings
+
+# <codecell>
+
+import ipykee
+print ipykee.settings.yaml
+
+# <codecell>
+
+import ipykee
+print ipykee.Session
+
+# <codecell>
+
+import ipykee
+print ipykee.settings()
+
+# <codecell>
+
+import ipykee
+print ipykee.config
 
 # <codecell>
 
@@ -26,14 +56,3 @@ ax1.set_title('sine')
 # <codecell>
 
 session.add(x, "x")
-
-# <codecell>
-
-session.commit("Plot sin x")
-
-# <codecell>
-
-fig2 = plt.figure()
-ax2 = fig2.add_subplot(1, 1, 1)
-ax2.plot(x, np.cos(x))
-ax2.set_title('cosine')

@@ -6,13 +6,73 @@
    "metadata": {},
    "outputs": [],
    "source": [
-    "%%javascript\n",
-    "IPython.load_extensions('ipykee');"
+    "import ipykee\n",
+    "ipykee.settings"
    ]
   },
   {
    "cell_type": "code",
    "execution_count": 2,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "import ipykee\n",
+    "print ipykee.settings"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 3,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "import ipykee\n",
+    "print ipykee.settings.Settings"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 4,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "import ipykee\n",
+    "print ipykee.settings.yaml"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 5,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "import ipykee\n",
+    "print ipykee.Session"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 6,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "import ipykee\n",
+    "print ipykee.settings()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 7,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "import ipykee\n",
+    "print ipykee.config"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 8,
    "metadata": {},
    "outputs": [],
    "source": [
@@ -23,7 +83,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 3,
+   "execution_count": 9,
    "metadata": {},
    "outputs": [],
    "source": [
@@ -35,24 +95,6 @@
     "ax1 = fig1.add_subplot(1, 1, 1)\n",
     "ax1.plot(x, np.sin(x))\n",
     "ax1.set_title('sine')"
-   ]
-  },
-  {
-   "cell_type": "code",
-   "execution_count": 4,
-   "metadata": {},
-   "outputs": [],
-   "source": [
-    "session.add(x, \"x\")"
-   ]
-  },
-  {
-   "cell_type": "code",
-   "execution_count": 5,
-   "metadata": {},
-   "outputs": [],
-   "source": [
-    "session.commit(\"Plot sin x\")"
    ]
   }
  ],

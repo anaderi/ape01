@@ -1,15 +1,6 @@
+FROM anaderi/rep-develop:latest
 
-    FROM anaderi/rep-develop:latest
-
-    ENV TEMP /tmp
-    RUN mkdir $TEMP/workdir
-    RUN cd $TEMP/workdir && git clone git@github.com:anaderi/ape01.git project
-    RUN cd project
-    # RUN git checkout <commit_hash>
-    
-    RUN cp $TEMP/project/./01-ipykee-github/notebook.ipynb /notebooks/ipykee_howto/01-ipykee-github.ipynb
-    
-    RUN cp $TEMP/project/./Dockerfile/notebook.ipynb /notebooks/ipykee_howto/Dockerfile.ipynb
-    
-    RUN cd / && rm -rf $TEMP/workdir
-    
+RUN mkdir -p /notebooks/ipykee_howto
+RUN cd /notebooks/ipykee_howto && git clone https://github.com/anaderi/ape01.git ape01 # && git checkout <commit_hash>
+ENV PROJECT_PATH /notebooks/ipykee_howto/ape01
+RUN cp $PROJECT_PATH/./01-ipykee-github/notebook.ipynb $PROJECT_PATH/01-ipykee-github.ipynb
